@@ -1,0 +1,35 @@
+{
+  "name": "sassyfloatgrid",
+  "version": "1.0.0",
+  "description": "A very simple and lightweight grid system based on the old way floating elements",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass src/sassyfloatgrid.scss dist/sassyfloatgrid.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch",
+
+    "watch:dev": "node-sass example/main.scss example/main.css -w",
+    "start:dev": "npm-run-all --parallel devserver watch:dev",
+
+    "compile": "node-sass src/sassyfloatgrid.scss dist/sassyfloatgrid.css",
+    "compress": "node-sass dist/sassyfloatgrid.css dist/sassyfloatgrid.min.css --output-style compressed",
+
+    "build": "npm-run-all compile compress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sassyelements/sassy-float-grid.git"
+  },
+  "author": "https://github.com/0xkhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sassyelements/sassy-float-grid/issues"
+  },
+  "homepage": "https://github.com/sassyelements/sassy-float-grid#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "node-sass": "^7.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^9.1.0"
+  }
+}

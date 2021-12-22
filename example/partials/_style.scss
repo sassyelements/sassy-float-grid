@@ -1,0 +1,52 @@
+.row {
+    font-size: 1.6rem;
+    
+    [class^="col-"] {
+        padding: 1rem;
+        border-radius: .3rem;
+        background-color: #ffcc5c;
+    }
+
+    .col-pulled {
+        margin-top: 6rem;
+        background-color: #ff6f69;
+    }
+
+    .col-a { background-color: #96ceb4; }
+    .col-b { background-color: #ff6f69; }
+}
+
+.row--overview {
+    padding: 4rem;
+    background-color: #ffeead;
+} 
+
+.header {
+    text-align: center;
+    padding: 2rem 0;
+    box-shadow: 0 .5rem 3rem rgba(#000, .1);
+
+    .logo {
+        width: 10rem;
+    }
+}
+
+section {
+    font-size: 1.6rem;
+    padding: 5rem 4rem;
+}
+
+.grid-title {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 4rem;
+}
+
+.grid-container {
+    padding: 4rem 0;
+    background-color: #ffeead;
+    
+    .row--overview-mix {
+        padding: 0 4rem;
+    }
+}
