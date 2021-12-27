@@ -54,11 +54,11 @@ $contained: 80%;
 
 // Breakpoints
 $map-grid-props: (
+    '': 0,
     '-xl': $grid__bp-xl,
     '-lg': $grid__bp-lg,
     '-md': $grid__bp-md,
-    '-sm': $grid__bp-sm,
-    '': 0
+    '-sm': $grid__bp-sm
 );
 
 $container-max-widths: (
